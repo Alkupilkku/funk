@@ -1,0 +1,122 @@
+body{
+  margin: 0px;
+  border: 0px;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: greenyellow;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+}
+.dropdown-content {
+ display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #9ae022;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.submit{
+  background-color: bisque;
+  width: 8vw;
+}
+.gridport{
+    display: grid;
+     grid-template-columns: repeat(12, minmax(0, 1fr));
+     gap: 20px;
+     padding: 70px clamp(22px, 5vw, 67px);
+     background: linear-gradient(120deg, #083494 0%, #4712a3 50%, #1e2b4a 100%);
+}
+
+.start{
+    grid-column: span 6;
+max-width: 450px;
+max-height: 450px;
+}
+.intro{
+      grid-column: span 6;
+max-width: 450px;
+max-height: 450px;
+}
+
+.infoa{   
+   display: grid;
+     grid-template-columns: repeat(12, minmax(0, 1fr));
+     gap: 20px;
+     padding: 70px clamp(22px, 5vw, 67px);
+     background: linear-gradient(120deg, #4871ca 0%, #916bd4 50%, #596e9f 100%);
+}
+.projekti-grid{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    background-color: #4712a3;
+    justify-content: center;
+   
+}
+.projekti-kortti{
+  display: grid;
+  justify-content: center;
+    border: 5px solid rgb(64, 189, 160);
+  background-color: rgb(23, 172, 125);
+  border-radius: 6px;
+  padding: 5%;
+  margin: 2px ;
+  overflow: hidden
+  ;
+}
+.projectbtn{
+padding: 0.5em 1.25em;
+display: grid;
+height: 3vh;
+width: 5vw;
+cursor: pointer;
+color: aquamarine;
+text-shadow: 4px;
+text-align: center;
+align-items: center;
+color: rgb(14, 74, 201);
+border-radius: 7px;
+margin: 0px auto;
+border: 4px solid transparent;
+  background:
+ linear-gradient(green) padding-box,
+ conic-gradient(purple 0%, yellow 0%, purple 80%, yellow 100%) border-box;
+
+}
+.projectbtn:hover{
+    background:
+ linear-gradient(rgb(69, 185, 69)) padding-box,
+ conic-gradient(rgb(23, 134, 118) 0%, purple 0%, rgb(23, 134, 118) 60%, purple 100%) border-box;
+}
+textarea{
+  height: 13vh;
+  width: 36vw;
+  overflow: hidden;
+}
+footer{
+  display: grid;
+ 
+  background: linear-gradient(130deg, #39c2a2 0%, #b035b0 50%, #b07935 100%);
+}
+@media(max-width: 900px){
+  .gridport .intro, .infoa .start{
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,93 @@
+body {
+    display: block;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: salmon;
+   
+}
+.calendar {
+    position: relative;
+    width: 450px;
+    height: 520px;
+    background-color: black;
+    color: lightgray;
+    border-radius: 10px;
+     box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.4 );
+     
+}
+.month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightseagreen;
+    width: 450px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+.month h1{
+font-size: 30px;
+font-weight: 400;
+text-transform: uppercase;
+
+}
+.date p{
+font-size: 16px;
+
+}
+.weekdays {
+    display: flex;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+}
+.weekdays div {
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    color: rgb(127, 127, 128);
+    color: lightgray;
+}
+.days div{
+    height: 50px;
+    margin: 3px;
+    width: 57.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.active{
+background-color: lightseagreen;
+}
+.days div:hover:not(:empty){
+   border: 2px solid lightgray;
+   
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}

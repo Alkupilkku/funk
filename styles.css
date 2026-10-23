@@ -1,0 +1,36 @@
+body{
+      background-color: bisque;
+      padding: 0px;
+      margin: 0px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+}
+.counter{
+  display: block;
+  height: 15em;
+  width: 25em;
+}
+button{
+  display: inline-block;
+   height: 34px;
+   width: auto;
+   padding: 0px 5px ;
+   border-radius: 8px;
+   margin-left: 15px;
+   font-size: 16px;
+   font-weight: bold;
+}
+#reset{
+background-color: rgb(77, 77, 209);
+}
+#stop{
+background-color: red;
+}
+#start{
+background-color: rgb(49, 172, 49);
+}
